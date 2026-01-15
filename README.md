@@ -19,7 +19,7 @@ Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your d
 ```
 npm i -g mint
 ```
-
+f
 Run the following command at the root of your documentation, where your `docs.json` is located:
 
 ```
