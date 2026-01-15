@@ -1,62 +1,62 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: 'Ontwikkeling'
+description: 'Bekijk wijzigingen lokaal om je documentatie bij te werken'
 ---
 
 <Info>
-  **Prerequisites**:
-  - Node.js version 19 or higher
-  - A docs repository with a `docs.json` file
+  **Vereisten**:
+  - Node.js versie 19 of hoger
+  - Een documentatierepository met een `docs.json` bestand
 </Info>
 
-Follow these steps to install and run Mintlify on your operating system.
+Volg deze stappen om Mintlify op je besturingssysteem te installeren en uit te voeren.
 
 <Steps>
-<Step title="Install the Mintlify CLI">
+<Step title="Installeer de Mintlify CLI">
 
 ```bash
 npm i -g mint
 ```
 </Step>
 
-<Step title="Preview locally">
+<Step title="Preview lokaal">
 
-Navigate to your docs directory where your `docs.json` file is located, and run the following command:
+Navigeer naar je documentatiemap waar je `docs.json` bestand zich bevindt, en voer het volgende commando uit:
 
 ```bash
 mint dev
 ```
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+Een lokale preview van je documentatie is beschikbaar op `http://localhost:3000`.
 
 </Step>
 </Steps>
 
-## Custom ports
+## Aangepaste poorten
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. For example, to run Mintlify on port 3333, use this command:
+Standaard gebruikt Mintlify poort 3000. Je kunt de poort waarop Mintlify draait aanpassen door de `--port` vlag te gebruiken. Om Mintlify bijvoorbeeld op poort 3333 te draaien, gebruik je dit commando:
 
 ```bash
 mint dev --port 3333
 ```
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+Als je probeert Mintlify te draaien op een poort die al in gebruik is, gebruikt het de volgende beschikbare poort:
 
 ```md
-Port 3000 is already in use. Trying 3001 instead.
+Poort 3000 is al in gebruik. Probeert 3001 in plaats daarvan.
 ```
 
-## Mintlify versions
+## Mintlify-versies
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local preview does not align with the production version, please update the CLI:
+Houd er rekening mee dat elke CLI-release geassocieerd is met een specifieke versie van Mintlify. Als je lokale preview niet overeenkomt met de productieversie, werk dan de CLI bij:
 
 ```bash
 npm mint update
 ```
 
-## Validating links
+## Links valideren
 
-The CLI can assist with validating links in your documentation. To identify any broken links, use the following command:
+De CLI kan helpen met het valideren van links in je documentatie. Om eventuele kapotte links te identificeren, gebruik je het volgende commando:
 
 ```bash
 mint broken-links
@@ -64,31 +64,31 @@ mint broken-links
 
 ## Deployment
 
-If the deployment is successful, you should see the following:
+Als de deployment succesvol is, zou je het volgende moeten zien:
 
 <Frame>
-  <img src="/images/checks-passed.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
+  <img src="/images/checks-passed.png" alt="Screenshot van een deploymentbevestigingsbericht dat zegt Alle controles zijn geslaagd." style={{ borderRadius: '0.5rem' }} />
 </Frame>
 
-## Code formatting
+## Codeformattering
 
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+We raden aan om extensies in je IDE te gebruiken om MDX te herkennen en te formatteren. Als je een VSCode-gebruiker bent, overweeg dan de [MDX VSCode-extensie](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) voor syntax highlighting, en [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) voor codeformattering.
 
-## Troubleshooting
+## Problemen oplossen
 
 <AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
+  <Accordion title='Fout: Kon de "sharp" module niet laden met de darwin-arm64 runtime'>
 
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of the CLI: `npm remove -g mint`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall the CLI: `npm i -g mint`
+    Dit kan te wijten zijn aan een verouderde versie van node. Probeer het volgende:
+    1. Verwijder de momenteel geïnstalleerde versie van de CLI: `npm remove -g mint`
+    2. Upgrade naar Node v19 of hoger.
+    3. Herinstalleer de CLI: `npm i -g mint`
   </Accordion>
 
-  <Accordion title="Issue: Encountering an unknown error">
+  <Accordion title="Probleem: Onbekende fout tegenkomen">
   
-    Solution: Go to the root of your device and delete the `~/.mintlify` folder. Then run `mint dev` again.
+    Oplossing: Ga naar de root van je apparaat en verwijder de `~/.mintlify` map. Voer dan opnieuw `mint dev` uit.
   </Accordion>
 </AccordionGroup>
 
-Curious about what changed in the latest CLI version? Check out the [CLI changelog](https://www.npmjs.com/package/mintlify?activeTab=versions).
+Benieuwd wat er is veranderd in de nieuwste CLI-versie? Bekijk het [CLI changelog](https://www.npmjs.com/package/mintlify?activeTab=versions).

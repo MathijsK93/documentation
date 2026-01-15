@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Mint Starter Kit",
+  "language": "nl",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,10 +12,10 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Gidsen",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Aan de slag",
             "pages": [
               "index",
               "quickstart",
@@ -22,14 +23,14 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "Aanpassen",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Inhoud schrijven",
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -38,7 +39,7 @@
             ]
           },
           {
-            "group": "AI tools",
+            "group": "AI-tools",
             "pages": [
               "ai-tools/cursor",
               "ai-tools/claude-code",
@@ -48,16 +49,16 @@
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API-referentie",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "API-documentatie",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Endpoint-voorbeelden",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
@@ -71,7 +72,7 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
+          "anchor": "Documentatie",
           "href": "https://mintlify.com/docs",
           "icon": "book-open-cover"
         },
@@ -90,7 +91,7 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
+        "label": "Ondersteuning",
         "href": "mailto:hi@mintlify.com"
       }
     ],
